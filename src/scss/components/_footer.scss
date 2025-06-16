@@ -1,0 +1,139 @@
+.footer {}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__up {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: clamp-px(24, 40);
+    border-bottom: 1px solid var(--borders-border-2);
+
+    @include respond-to("pc-old") {
+        gap: 24px;
+    }
+
+    @include respond-to("tel") {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.footer__down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    padding-top: clamp-px(32, 40);
+    padding-bottom: clamp-px(24, 50);
+    border-bottom: 1px solid var(--borders-border-2);
+
+    @include respond-to("tel") {
+        flex-direction: column;
+    }
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(16, 20);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 17);
+    line-height: 150%;
+    color: var(--text-text-2);
+    margin-right: 20px;
+}
+
+.footer__lang-box {
+
+    @include respond-to("tel") {
+        display: none;
+    }
+
+    & .lang-box__item-visible {
+        color: var(--text-text-1);
+    }
+
+    &>svg>path {
+        stroke: #111827;
+    }
+}
+
+.footer__menu {
+    @include respond-to("pc-old") {
+        margin-left: 0;
+    }
+
+
+
+    & .nav-list {
+        gap: clamp-px(12, 60);
+
+        @include respond-to("tel") {
+            flex-direction: column;
+        }
+    }
+
+    & a {
+        font-size: clamp-px(16, 20);
+    }
+}
+
+.footer__down-col {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(12, 16);
+    max-width: 423px;
+}
+
+.footer__down-col-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 150%;
+    color: var(--text-text-2);
+}
+
+.footer__down-col-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(8, 12);
+}
+
+.address {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp-px(16, 20);
+    line-height: 137%;
+    color: var(--text-text-1);
+}
+
+.mail {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp-px(16, 20);
+    line-height: 120%;
+    color: var(--text-text-1);
+}
+
+.footer__copy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 23px;
+
+    & a,
+    & div {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp-px(16, 20);
+        line-height: 150%;
+        color: var(--text-text-2);
+    }
+}

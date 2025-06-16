@@ -126,3 +126,81 @@
         --gap: 16px;
     }
 }
+
+.ml_153 {
+    margin-left: clamp-px(20, 153);
+}
+
+.c_grey {
+    color: var(--text-text-3);
+}
+
+.c_blue {
+    color: var(--text-link);
+}
+
+.bg_white {
+    background: var(--text-text--white);
+}
+
+.br_t {
+    border-radius: clamp-px(32, 64) clamp-px(32, 64) 0 0;
+}
+
+.br_b {
+    border-radius: 0 0 clamp-px(32, 64) clamp-px(32, 64);
+}
+
+.pt_160 {
+    padding-top: clamp-px(64, 160) !important;
+}
+
+.pb_160 {
+    padding-bottom: clamp-px(64, 160) !important;
+}
+
+.p_bold {
+    font-weight: 500;
+}
+
+
+
+.border_bg {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 10px;
+
+    &>.container {
+        padding: 0 20px;
+
+        @include respond-to("tab") {
+            padding: 0;
+        }
+    }
+
+    @include respond-to("tab") {
+
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+
+        @include respond-to("tel") {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+
+        margin: 0;
+
+    }
+}
+
+.mob-p_0 {
+    @include respond-to("tel") {
+        padding: 0 !important;
+    }
+}
+
+.mob-hidden {
+    @include respond-to("tab") {
+        display: none;
+    }
+}

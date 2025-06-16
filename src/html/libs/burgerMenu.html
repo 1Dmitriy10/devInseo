@@ -2,12 +2,24 @@
 
 <!-- выезжающее меню -->
 <nav class="mob-nav" id="mob-menu">
+    <div class="mob-nav__header">
+        <a href="/" class="logo mob-nav__logo">
+            <img src="@img/logo.png" alt="">
+        </a>
 
-    <nav>
+        <button class="mob-nav__exit">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 18.5L18 6.5M6 6.5L18 18.5" stroke="#111827" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <nav class="mob-nav__nav">
         <ul class="mob-nav-list">
             <li class="mob-nav-item">
-                <a href="#" class="mob-nav-link">Главная</a>
-                <ul class="spoiler-content-menu">
+                <a href="#" class="mob-nav-link">SEO-продвижение</a>
+                <!-- <ul class="spoiler-content-menu">
                     <li class="mob-nav-item">
                         <a class="mob-nav-link" href="#">
                             второй уровень
@@ -27,12 +39,61 @@
                             второй уровень
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </li>
             <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Разработка</a>
+            </li>
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Дизайн</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Портфолио</a>
+            </li>
+
+            <li class="mob-nav-item">
                 <a href="#" class="mob-nav-link">Контакты</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Блог</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">О компании</a>
             </li>
         </ul>
     </nav>
 
+    <div class="mob-nav__link-box">
+        <a class="tel" href="tel:+995551287944">
+            +995 55128 79 44
+        </a>
+
+        <a class="mail" href="mailto:rabotaseoge@gmail.com">
+            rabotaseoge@gmail.com
+        </a>
+
+
+    </div>
+
+    <div class="lang-box__item-hidden_mob">
+
+        <div class="lang-box__item-hidden-item active">
+            RU
+        </div>
+
+        <div class="lang-box__item-hidden-item">
+            ENG
+        </div>
+
+        <div class="lang-box__item-hidden-item">
+            FR
+        </div>
+
+        <div class="lang-box__item-hidden-item">
+            ES
+        </div>
+    </div>
 </nav>

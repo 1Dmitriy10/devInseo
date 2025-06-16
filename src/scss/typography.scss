@@ -1,3 +1,21 @@
 h1 {
     @include font(var(--fwH1), var(--fsH1), var(--colorH1), 140%);
 }
+
+p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(14, 20);
+    line-height: 150%;
+    color: var(--text-text-1);
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp-px(32, 48);
+    line-height: 130%;
+    text-transform: uppercase;
+    color: var(--text-text-1);
+    margin-bottom: clamp-px(32, 60);
+}

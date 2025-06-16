@@ -6,11 +6,12 @@
 // }
 // ------------------------кнопка бургера---------------------------
 .mob-nav-btn {
+    margin-left: 20px;
     display: none;
     position: relative;
-    z-index: 100;
-    min-width: 20px;
-    height: 16px;
+    z-index: 10 !important;
+    min-width: 24px;
+    height: 24px;
     background: none;
     border: none;
     align-items: center;
@@ -78,10 +79,10 @@
 .mob-nav {
     z-index: 100;
     width: 100%;
-    padding: 50px 20px 20px 20px;
+    padding: 16px 20px 30px 20px;
     // transform: translateX(200%);
     transition: 0.5s;
-    background: gray;
+    background: var(--text-text--white);
     position: fixed;
     top: 0;
     left: 0;
@@ -128,6 +129,14 @@
 
 }
 
+.mob-nav__header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
 .mob-menu-exit {
     width: 30px;
     min-height: 30px;
@@ -143,20 +152,34 @@
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    // row-gap: 20px;
     min-height: 70%
 }
 
 .mob-nav-link {
-    font-weight: 700;
-    font-size: 35px;
-    color: #000000;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--text-text-1);
 }
 
 .mob-nav-item>a {
-    font-weight: 700;
-    font-size: 35px;
-    color: #000000;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: var(--text-text-1);
+    width: 100%;
+    display: flex;
+
+    border-radius: 8px;
+    padding: 17px 12px;
+
+    &:hover {
+        transition: 0.3s;
+        background: var(--button-secondary-light-blue);
+    }
 }
 
 .social-box__mob {
@@ -184,7 +207,7 @@
 
 .mob-nav-item {
     position: relative;
-    max-width: 150px;
+    // max-width: 150px;
 }
 
 .spoiler-content-menu {
@@ -200,6 +223,40 @@
 
     &>.mob-nav-item>.spoiler-content-menu>.mob-nav-item>a {
         font-weight: 500;
+    }
+
+}
+
+.mob-nav__nav {
+    margin-bottom: 20px;
+}
+
+.mob-nav__link-box {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 50px;
+
+    & .mail {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 137%;
+        color: var(--text-link);
+    }
+}
+
+.lang-box__item-hidden_mob {
+    display: flex;
+    gap: 20px;
+
+    & .lang-box__item-hidden-item {
+        padding: 0;
+
+        &.active {
+            color: var(--text-link);
+        }
     }
 
 }

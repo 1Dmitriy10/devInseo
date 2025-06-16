@@ -1,13 +1,10 @@
 //====================[Меню]===============================
-body {
-    height: 9000px;
-}
 
 .nav-list,
 .nav-list-sticky {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: clamp-px(20, 42);
     justify-content: space-between;
     position: relative;
 
@@ -105,8 +102,13 @@ body {
 
     }
 
-    &>a {
+    & a {
         transition: 0.3s;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: var(--text-text-1);
 
 
         &:hover {

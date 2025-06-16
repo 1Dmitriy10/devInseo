@@ -3,7 +3,7 @@ import fonter from "gulp-fonter"
 import ttf2woff2 from "gulp-ttf2woff2"
 
 export const otfToTtf = () => {
-    return app.gulp.src(`${app.path.srcFolder}/files/fonts/*.otf`, {})     //Ищем файлы шрифтов otf
+    return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})     //Ищем файлы шрифтов otf
 
     .pipe(app.plugins.plumber(                      //Ошибки в виндоус
         app.plugins.notify.onError({
@@ -14,11 +14,11 @@ export const otfToTtf = () => {
     .pipe(fonter({                                  //Конвертируем в ttf
         formats: ['ttf']
     }))
-    .pipe(app.gulp.dest(`${app.path.srcFolder}/files/fonts/`))                  //Выгружаем обратно к исходникам
+    .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))                  //Выгружаем обратно к исходникам
 } 
 
 export const ttfToWoff = () => {
-    return app.gulp.src(`${app.path.srcFolder}/files/fonts/*.ttf`, {})     //Ищем файлы шрифтов ttf
+    return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {})     //Ищем файлы шрифтов ttf
     .pipe(app.plugins.plumber(                      //Ошибки в виндоус
         app.plugins.notify.onError({
             title: "FONTS",
@@ -29,7 +29,7 @@ export const ttfToWoff = () => {
         formats: ['woff']
     }))
     .pipe(app.gulp.dest(`${app.path.build.fonts}`))                  //Выгружаем в папку с результатом
-    .pipe(app.gulp.src(`${app.path.srcFolder}/files/fonts/*.ttf`))    //Ищем файлы шрифтов ttf
+    .pipe(app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`))    //Ищем файлы шрифтов ttf
     .pipe(ttf2woff2())                                 //Конвертируем в woff2
     .pipe(app.gulp.dest(`${app.path.build.fonts}`))         //Выгружаем в папку с результатом
 
@@ -42,7 +42,7 @@ export const ttfToWoff = () => {
         .pipe(fonter({                                  //Конвертируем в ttf
             formats: ['ttf']
         }))
-        .pipe(app.gulp.dest(`${app.path.srcFolder}/files/fonts/`))                  //Выгружаем обратно к исходникам
+        .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))                  //Выгружаем обратно к исходникам
 }
 
 export const fontsStyle = () => {

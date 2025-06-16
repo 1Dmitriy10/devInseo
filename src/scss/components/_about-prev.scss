@@ -1,0 +1,130 @@
+.about-prev {}
+
+.about-prev__container {
+    display: flex;
+    position: relative;
+
+    & .card_1 {
+        position: absolute;
+        z-index: 2;
+        bottom: clamp-px(18, 40);
+        right: 40px;
+        max-width: clamp-px(250, 308);
+        min-height: clamp-px(136, 192);
+
+        @include respond-to("tab") {
+            right: auto;
+            left: 18px;
+        }
+
+        & .card_1__title {
+            font-size: clamp-px(32, 65);
+        }
+    }
+
+    @include respond-to("pc-old") {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.about-prev__text-box {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(18, 33);
+    position: relative;
+    z-index: 2;
+    padding: 64px 0 83px 0;
+
+    @include respond-to("pc-old") {
+        padding: 0;
+    }
+}
+
+.about-prev__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(32, 127);
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+
+    @include respond-to("tab") {
+        & .ml_153 {
+            margin-left: 0;
+        }
+    }
+}
+
+.about-prev__subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 150%;
+    color: var(--text-text-1);
+
+    @include respond-to("tab") {
+        &.ml_153 {
+            margin-left: 0;
+        }
+    }
+}
+
+.about-prev__img-box {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 62%;
+
+    @include respond-to("pc-old") {
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        right: auto;
+    }
+
+    // height: 720px;
+}
+
+.about-prev__img {
+    position: absolute;
+    width: 100%;
+    height: 622px;
+    right: 0;
+    border-radius: clamp-px(24, 48);
+
+    &>picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: clamp-px(24, 48);
+
+        &>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: clamp-px(24, 48);
+        }
+    }
+
+    @include respond-to("pc-old") {
+        position: relative;
+        height: 442px;
+        width: 100%;
+    }
+}
+
+.img-responsive {}
+
+.card_1 {}
+
+.card_1__title {}
+
+.card_1__subtitle {}

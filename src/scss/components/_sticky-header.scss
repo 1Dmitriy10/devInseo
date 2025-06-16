@@ -21,3 +21,23 @@
     }
 
 }
+
+.sticky-header__container {
+    display: flex;
+    align-items: center;
+    padding: clamp-px(20, 30);
+}
+
+.sticky-header-logo {
+    margin-right: clamp-px(20, 45);
+}
+
+.nav-sticky {
+    @include respond-to("tab") {
+        display: none;
+    }
+}
+
+.mob-nav-btn-sticky {
+    margin-left: auto;
+}

@@ -5,7 +5,7 @@
 
     //container
     .container {
-        max-width: 1400px;
+        max-width: 1800px;
         margin: 0 auto;
 
         @include respond-to("pc") {
@@ -34,14 +34,69 @@
         }
     }
 
-    section {
+    section,
+    footer,
+    header {
         padding: 0 20px;
+
+        @include respond-to("tel") {
+            padding: 0 8px;
+        }
     }
 
     //===========Шрифты============
-
+    --font-family: "Manrope",
+    sans-serif;
+    --second-family: "Golos Text",
+    sans-serif;
+    --third-family: "Inter",
+    sans-serif;
+    --font3: "NTSomic",
+    sans-serif;
     //===========Цвета===========
-
+    --text-text-1: #111827;
+    --text-text-2: #585f6a;
+    --text-text-3: #9299a5;
+    --text-text--white: #fff;
+    --text-link: #3f7cff;
+    --text-link-hover: #3d6dd7;
+    --borders-border-1: #ebedf1;
+    --borders-border-2: #d9dbdf;
+    --borders-border-3: #b7beca;
+    --borders-border-4: #2e3444;
+    --borders-border-black: #111827;
+    --borders-border-brand: #4c84fd;
+    --borders-border-error: #e83838;
+    --background-bg-0: #fff;
+    --background-bg-1: #eef1f9;
+    --background-bg-2: #edeef0;
+    --background-bg-3: #e5e7eb;
+    --background-bg-4: #f7f8fb;
+    --background-bg-green: #ecfdf5;
+    --background-bg-orange: #fff8eb;
+    --background-bg-blue: #f1f6fe;
+    --button-main-orange: #fa9621;
+    --button-main-red-hover: #ed8a16;
+    --button-main-blue: #4c84fd;
+    --button-main-blue-hover: #0b50e3;
+    --button-main-green: #10b981;
+    --button-main-green-hover: #0aad77;
+    --button-main-overlay: #fff;
+    --button-main-overlay-hover: rgba(255, 255, 255, 0.9);
+    --button-main-no-active: #c3c7cb;
+    --button-secondary-light-orange: #fff7eb;
+    --button-secondary-light-orange-hover: #fff2df;
+    --button-secondary-light-blue: #e1eafe;
+    --button-secondary-light-blue-hover: #cbdbff;
+    --button-secondary-light-green: #ecfaf5;
+    --button-secondary-light-green-hover: #dbf5ec;
+    --button-secondary-grey: #f4f5f6;
+    --button-secondary-grey-hover: #ebecee;
+    --button-secondary-overlay: rgba(255, 255, 255, 0.12);
+    --button-secondary-overlay-hover: rgba(255, 255, 255, 0.17);
+    --brand-colors-main: #f02d39;
+    --brand-colors-secondary-1: #de7337;
+    --brand-colors-secondary-2: #b29b81;
     // ===========gap===========
     --gap: 20px;
 

@@ -1,0 +1,155 @@
+.main-banner {
+    margin-bottom: 32px;
+
+    @include respond-to("tab") {
+        margin-bottom: 64;
+    }
+}
+
+.main-banner__container {
+    display: flex;
+    $gap: 40px;
+    gap: $gap;
+    justify-content: space-between;
+
+    @media (width<1600px) {
+        flex-direction: column;
+    }
+}
+
+.main-banner__text-box {
+    flex: 0 1 calc((100% - $gap * 1) /2);
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: clamp-px(64, 81);
+
+    &>h1 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp-px(38, 80);
+        line-height: 115%;
+        text-transform: uppercase;
+        color: var(--text-text-1);
+        margin-bottom: clamp-px(18, 32);
+
+        & sup {
+            position: absolute;
+            font-size: clamp-px(14, 25);
+            font-family: var(--font3);
+            font-weight: 500;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: var(--text-text-3);
+        }
+
+        & .ml_153 {
+            @include respond-to("tab") {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media (width<1600px) {
+        margin-bottom: 0;
+    }
+}
+
+.main-banner__subtitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 150%;
+    color: var(--text-text-1);
+    margin-bottom: clamp-px(32, 64);
+}
+
+
+.main-banner__slide-box {
+    flex: 0 1 calc((100% - $gap * 1) /2);
+    aspect-ratio: 1/0.83;
+    position: relative;
+    border-radius: clamp-px(24, 48);
+    overflow: hidden;
+    padding: 12px;
+    display: flex;
+
+    &>picture>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: clamp-px(24, 48);
+    }
+
+    @media (width<1600px) {
+        flex: 1 1 clamp-px(359, 768);
+    }
+}
+
+.main-banner__slide-box-card-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+    counter-reset: count 0;
+
+    &>.card_1 {
+        flex: 0 1 calc((100% - 8px * 2) / 3);
+        min-height: auto;
+        height: clamp-px(114, 207);
+
+        & .card_1__title {
+            counter-increment: count 1;
+            position: relative;
+            padding-right: clamp-px(15, 25);
+            width: fit-content;
+
+            &::after {
+                content: counter(count);
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: clamp-px(14, 24);
+                line-height: 120%;
+                color: var(--text-text-1);
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+
+
+        &:last-child {
+            margin-top: -60px;
+        }
+
+        @include respond-to("tab") {
+            flex: 0 0 188px;
+            scroll-snap-align: start;
+
+            &:last-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    @include respond-to("tab") {
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        // -----цвет скрола
+        scrollbar-color: var(--text-link) transparent;
+        scrollbar-width: thin;
+        padding-bottom: 10px;
+    }
+}
+
+.main-banner__btn {
+    @include respond-to("tel") {
+        max-width: 100%;
+    }
+}

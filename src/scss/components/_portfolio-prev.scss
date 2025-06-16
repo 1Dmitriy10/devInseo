@@ -1,0 +1,9 @@
+.portfolio-prev__mob-box {
+    display: none;
+
+    @include respond-to("tab") {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}

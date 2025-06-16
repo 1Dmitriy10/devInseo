@@ -3,13 +3,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: var(--text-text--white) !important;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px rgba(187, 185, 185, 0.4117647059);
     padding: 10px;
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
+
 }
 
 .sticky-header.show {

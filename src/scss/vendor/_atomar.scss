@@ -143,6 +143,10 @@
     background: var(--text-text--white);
 }
 
+.c_white {
+    color: var(--text-text--white);
+}
+
 .br_t {
     border-radius: clamp-px(32, 64) clamp-px(32, 64) 0 0;
 }
@@ -204,3 +208,9 @@
         display: none;
     }
 }
+
+.span_2 {
+    grid-column: span 2;
+}
+
+.span_3 {}

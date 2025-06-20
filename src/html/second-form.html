@@ -1,0 +1,59 @@
+<section class='second-form-section bg_white border_bg pb_160'>
+    <div class='container second-form__container'>
+
+        <picture class="second-form_bg">
+            <!-- avif -->
+            <source srcset='@img/form/second-form-bg.avif' type='image/avif' />
+            <!-- webp -->
+            <source srcset='@img/form/second-form-bg.webp' type='image/webp' />
+            <!-- jpeg -->
+            <source srcset='@img/form/second-form-bg-sm.jpeg' media='(max-width: 768px)' type='image/jpeg' />
+            <!-- png -->
+            <source srcset='@img/form/second-form-bg-sm.png' media='(max-width: 768px)' type='image/png' />
+            <!-- original -->
+            <img src='@img/form/second-form-bg.png' class='img-responsive' alt='' loading='lazy' />
+        </picture>
+
+        <div class="second-form__text-box">
+            <div class="second-form__title">
+                Улучшим ваш поисковой маркетинг
+            </div>
+            <div class="second-form__subtitle">
+                Оставьте заявку, и мы поможем вам вывести ваш бизнес в топ поисковых систем!
+            </div>
+        </div>
+
+        <div class="second-form__form-box">
+            <form class="second-form" action="">
+
+                <div class="form__double-row">
+                    <div class="form__row">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form__row">
+                        <input type="text" name="tel" placeholder="___ ___ __ __">
+                    </div>
+
+                </div>
+
+                <div class="form__row">
+                    <textarea name="text" id=""
+                        placeholder="Расскажите о вашем бизнесе: тематика, цели, текущее состояние"></textarea>
+                </div>
+
+                <div class="form-btn-box">
+                    <button class="btn primary-form__btn" type="submit">Отправить заявку</button>
+
+                    <div class="agree-box">
+
+                        <span>Заполняя эту форму, Вы соглашаетесь с правилами
+                            <a href="#">Политики Конфиденциальности</a>
+                        </span>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,97 @@
+.reviews-prev {}
+
+.reviews-prev__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__slider-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.reviews-slider-wrapper {
+    padding: 15px;
+}
+
+.card_6 {
+    display: flex;
+    flex-direction: column;
+    border-radius: clamp-px(18, 32);
+    padding: clamp-px(18, 32);
+    min-height: clamp-px(389, 482);
+    box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.08);
+    background: var(--text-text--white);
+    position: relative;
+    height: 100%;
+}
+
+.card_6__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_6__header {
+    display: flex;
+    align-items: center;
+    gap: clamp-px(12, 20);
+    margin-bottom: clamp-px(20, 24);
+}
+
+.card_6__icon {
+    width: clamp-px(44, 74);
+    height: clamp-px(44, 74);
+    border-radius: clamp-px(15, 18);
+    position: relative;
+}
+
+.card_6__name-box {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(5, 12);
+}
+
+.card_6__name {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp-px(18, 20);
+    line-height: 120%;
+    color: #1f2023;
+}
+
+.card_6__company {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(15, 18);
+    line-height: 144%;
+    color: var(--text-text-2);
+}
+
+.card_6__rating-box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: clamp-px(18, 24);
+}
+
+.rating {}
+
+.card_6__rating-date {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(15, 18);
+    line-height: 144%;
+    color: var(--text-text-3);
+}
+
+.card_6__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 150%;
+    color: var(--text-text-1);
+}

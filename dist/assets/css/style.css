@@ -268,6 +268,22 @@ p {
   margin-bottom: clamp(2rem, 1.4571960298rem + 2.3159636063vw, 3.75rem);
 }
 
+::-webkit-input-placeholder {
+  font-family: var(--font-family);
+}
+
+:-ms-input-placeholder {
+  font-family: var(--font-family);
+}
+
+:-moz-placeholder {
+  font-family: var(--font-family);
+}
+
+::-moz-placeholder {
+  font-family: var(--font-family);
+}
+
 .btn-up {
   border-radius: 100%;
   display: -webkit-box;
@@ -3220,6 +3236,14 @@ section {
   overflow: hidden;
   width: 100%;
 }
+@media (max-width: 991.98px) {
+  .second-form__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 
 .second-form_bg {
   position: absolute;
@@ -3237,10 +3261,15 @@ section {
   -webkit-transform: translateX(-45%);
   -ms-transform: translateX(-45%);
   transform: translateX(-45%);
-  width: 100%;
+  width: 84%;
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .second-form_bg {
+    display: none;
+  }
 }
 
 .second-form__text-box {
@@ -3294,6 +3323,11 @@ section {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+@media (max-width: 991.98px) {
+  .second-form__form-box {
+    padding: 0 8px;
+  }
+}
 
 .second-form {
   display: -webkit-box;
@@ -3313,8 +3347,21 @@ section {
 .second-form .form__double-row {
   margin-bottom: 12px;
 }
+.second-form .form__double-row > .form__row {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc((100% - 12px) / 2);
+  flex: 0 1 calc((100% - 12px) / 2);
+}
+@media (max-width: 1199.98px) {
+  .second-form .form__double-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 .second-form textarea {
-  height: 176px;
+  height: clamp(7.875rem, 6.905707196rem + 4.1356492969vw, 11rem);
   background: var(--background-bg-4);
   width: 100%;
   border-radius: 8px;
@@ -3347,6 +3394,96 @@ section {
 .form-btn-box .btn {
   max-width: 251px;
   height: 100%;
+}
+@media (max-width: 1399.98px) {
+  .form-btn-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-btn-box .btn {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.steps__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.steps__card-box {
+  counter-reset: steps 0;
+}
+
+.card_5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: clamp(14.5rem, 11.7859801489rem + 11.5798180314vw, 23.25rem);
+  border-radius: clamp(1.125rem, 0.8535980149rem + 1.1579818031vw, 2rem);
+  padding: clamp(1.125rem, 0.8535980149rem + 1.1579818031vw, 2rem);
+  background: var(--background-bg-4);
+}
+
+.card_5__header {
+  margin-bottom: 20px;
+}
+
+.card_5__number {
+  border-radius: clamp(0.5rem, 0.3449131514rem + 0.6617038875vw, 1rem);
+  width: clamp(3.125rem, 2.9311414392rem + 0.8271298594vw, 3.75rem);
+  height: clamp(3.125rem, 2.9311414392rem + 0.8271298594vw, 3.75rem);
+  background: rgba(104, 151, 252, 0.2);
+  counter-increment: steps 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.card_5__number::before {
+  content: "0" counter(steps);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
+  line-height: 150%;
+  color: var(--text-link);
+}
+
+.card_5__title {
+  margin-top: auto;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 1.0949131514rem + 0.6617038875vw, 1.75rem);
+  line-height: 129%;
+  color: var(--text-text-1);
+  margin-bottom: clamp(0.75rem, 0.6336848635rem + 0.4962779156vw, 1.125rem);
+}
+
+.card_5__text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: clamp(0.9375rem, 0.8405707196rem + 0.4135649297vw, 1.25rem);
+  line-height: 150%;
+  color: var(--text-text-1);
+  opacity: 0.7;
 }
 
 .gap_15 {

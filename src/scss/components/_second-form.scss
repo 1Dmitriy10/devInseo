@@ -12,6 +12,11 @@
     overflow: hidden;
     width: 100%;
 
+    @include respond-to("nout") {
+        flex-direction: column;
+
+    }
+
 }
 
 .second-form_bg {
@@ -27,9 +32,13 @@
         top: 0;
         left: 50%;
         transform: translateX(-45%);
-        width: 100%;
+        width: 84%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
+    }
+
+    @include respond-to("nout") {
+        display: none;
     }
 }
 
@@ -69,6 +78,10 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
+
+    @include respond-to('nout') {
+        padding: 0 8px;
+    }
 }
 
 .second-form {
@@ -86,10 +99,18 @@
 
     & .form__double-row {
         margin-bottom: 12px;
+
+        &>.form__row {
+            flex: 0 1 calc((100% - 12px * 1) / 2);
+        }
+
+        @include respond-to("pc-old") {
+            flex-direction: column;
+        }
     }
 
     & textarea {
-        height: 176px;
+        height: clamp-px(126, 176);
         background: var(--background-bg-4);
         width: 100%;
         border-radius: 8px;
@@ -117,11 +138,21 @@
     margin-top: clamp-px(22, 32);
     display: flex;
     gap: clamp-px(12, 32);
-    // flex-wrap: wrap;
+
     align-items: center;
 
     & .btn {
         max-width: 251px;
         height: 100%;
+    }
+
+    @include respond-to("pc") {
+        flex-direction: column;
+        text-align: center;
+
+        & .btn {
+            max-width: 100%;
+            height: 100%;
+        }
     }
 }

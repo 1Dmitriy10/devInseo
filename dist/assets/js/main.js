@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const spoilers = new _vendor_spoilers_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
-    item: '_spoiler-js', /*класс споилера*/
+    item: 'faq__spoiler', /*класс споилера*/
     timeAnimation: 300, /*время анимации*/
     accordion: true,    /*Режим аккордиона*/
     firstOpen: true    /*Первый элемент всегда открыт*/

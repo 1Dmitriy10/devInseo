@@ -10,7 +10,7 @@
 import { Spoilers } from "../vendor/spoilers.js";
 
 const spoilers = new Spoilers({
-    item: '_spoiler-js', /*класс споилера*/
+    item: 'faq__spoiler', /*класс споилера*/
     timeAnimation: 300, /*время анимации*/
     accordion: true,    /*Режим аккордиона*/
     firstOpen: true    /*Первый элемент всегда открыт*/

@@ -1,0 +1,52 @@
+.seo-text {}
+
+.seo-text__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    @include respond-to("nout") {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.seo-text__text-box {
+    flex: 0 1 calc((100% - 20px * 1) / 2);
+    max-width: 784px;
+
+    @include respond-to("nout") {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+
+.seo-text__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 150%;
+    color: var(--text-text-2);
+}
+
+.seo-text__img-wrap {
+    flex: 0 1 calc((100% - 20px * 1) / 2);
+    max-width: clamp-px(180, 736);
+    aspect-ratio: 1/0.55;
+    position: relative;
+    border-radius: 20px;
+    height: fit-content;
+
+    @include respond-to("nout") {
+        flex: 0 1 250px;
+        max-width: 100%;
+    }
+}
+
+.img-bg {
+    border-radius: 20px;
+
+    &>img {
+        border-radius: 20px;
+    }
+}

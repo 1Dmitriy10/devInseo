@@ -131,6 +131,10 @@
     margin-left: clamp-px(20, 153);
 }
 
+.mb_160 {
+    margin-bottom: clamp-px(64, 160) !important;
+}
+
 .c_grey {
     color: var(--text-text-3);
 }

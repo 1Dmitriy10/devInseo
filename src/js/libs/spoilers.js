@@ -16,5 +16,12 @@ const spoilers = new Spoilers({
     firstOpen: true    /*Первый элемент всегда открыт*/
 })
 
+const servicesSpoilers = new Spoilers({
+    item: 'services_spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: true,    /*Режим аккордиона*/
+    firstOpen: false    /*Первый элемент всегда открыт*/
+})
+
 
 

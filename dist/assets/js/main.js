@@ -25,6 +25,13 @@ const spoilers = new _vendor_spoilers_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
     firstOpen: true    /*Первый элемент всегда открыт*/
 })
 
+const servicesSpoilers = new _vendor_spoilers_js__WEBPACK_IMPORTED_MODULE_0__.Spoilers({
+    item: 'services_spoiler', /*класс споилера*/
+    timeAnimation: 300, /*время анимации*/
+    accordion: true,    /*Режим аккордиона*/
+    firstOpen: false    /*Первый элемент всегда открыт*/
+})
+
 
 
 

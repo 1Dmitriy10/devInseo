@@ -1,0 +1,52 @@
+.inner-banner {
+    margin-bottom: clamp-px(64, 100);
+}
+
+.inner-banner__container {}
+
+.inner-banner__col__title {
+    flex: 0 1 calc((100% - 32px * 1) / 2);
+    max-width: 620px;
+
+    @include respond-to("pc-old") {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    & h1 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: clamp-px(38, 80);
+        line-height: 115%;
+        text-transform: uppercase;
+        color: var(--text-text-1);
+    }
+}
+
+.inner-banner__col__content {
+    flex: 0 1 calc((100% - 32px * 1) / 2);
+    max-width: 755px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(30, 60);
+
+    @include respond-to("pc-old") {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+
+.inner-banner__text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 150%;
+    color: var(--text-text-2);
+}
+
+.inner-banner__btn {
+    @include respond-to("tel") {
+        width: 100%;
+        max-width: 100%;
+    }
+}

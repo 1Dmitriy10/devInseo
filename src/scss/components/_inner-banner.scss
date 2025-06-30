@@ -45,6 +45,8 @@
 }
 
 .inner-banner__btn {
+    max-width: 300px;
+
     @include respond-to("tel") {
         width: 100%;
         max-width: 100%;

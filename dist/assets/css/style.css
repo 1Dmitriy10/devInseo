@@ -3998,6 +3998,9 @@ section {
   color: var(--text-text-2);
 }
 
+.inner-banner__btn {
+  max-width: 300px;
+}
 @media (max-width: 575.98px) {
   .inner-banner__btn {
     width: 100%;

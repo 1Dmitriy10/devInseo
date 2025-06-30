@@ -14061,6 +14061,23 @@ function inputmask() {
 }
 inputmask()
 
+/***/ }),
+/* 62 */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   gitNav: () => (/* binding */ gitNav)
+/* harmony export */ });
+function gitNav() {
+    let block = document.querySelector(".git-nav-box");
+    
+    block.addEventListener("click", function() {
+        block.classList.toggle("show");
+    })
+    };
+    gitNav();
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -14176,6 +14193,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libs_slider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
 /* harmony import */ var _libs_fancybox_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(56);
 /* harmony import */ var _libs_mask_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(60);
+/* harmony import */ var _libs_gitNav_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(62);
 //------------------------Спойлеры-----------------------
 
 
@@ -14255,7 +14273,7 @@ __webpack_require__.r(__webpack_exports__);
 // import { customCheckbox } from "./components/customCheckbox.js";
 
 //---------------Навигация для гита---------------
-// import { gitNav } from "./components/gitNav.js";
+
 
 //---------------Слайдер мобильного меню---------------
 // import { mobMenuSlider } from "./components/mobMenuSlider.js";

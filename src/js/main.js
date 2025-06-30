@@ -77,7 +77,7 @@ import { mask } from "./libs/mask.js";
 // import { customCheckbox } from "./components/customCheckbox.js";
 
 //---------------Навигация для гита---------------
-// import { gitNav } from "./components/gitNav.js";
+import { gitNav } from "./libs/gitNav.js";
 
 //---------------Слайдер мобильного меню---------------
 // import { mobMenuSlider } from "./components/mobMenuSlider.js";

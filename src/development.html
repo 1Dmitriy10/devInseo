@@ -138,11 +138,55 @@
         @@include('html/reviews-prev.html')
         @@include('html/brand-prev.html')
         @@include('html/second-form.html')
-
-        <!-- стек -->
-
+        @@include('html/technology-stack.html')
         @@include('html/faq-prev.html')
-        @@include('html/seo-text.html')
+        <section class="seo-text mb_160">
+            <div class="container seo-text__container">
+                <div class="seo-text__text-box">
+                    <h2 class="title">
+                        Обратитесь за разработкой сайта под ключ к нам
+                    </h2>
+
+                    <div class="seo-text__text">
+                        <p>
+                            Разработка качественного сайта это ответственный шаг, результат которого поможет привлечь
+                            клиентов, продавать и развивать ваш бизнес. В INSEO-Service мы создаем сайты под ключ: от
+                            идеи и технической реализации до полной настройки и запуска.
+                        </p>
+
+                        <p>
+                            Мы разрабатываем адаптивные, быстрые и безопасные сайты, которые соответствуют современным
+                            стандартам. Работая с разными платформами и технологиями, мы подбираем оптимальное решение
+                            под задачи вашего бизнеса.
+                        </p>
+
+                        <p>
+                            Наши специалисты обеспечивают полный цикл разработки: проектирование структуры, верстку,
+                            программирование, тестирование и техническую поддержку. Мы не просто создаем сайт, а делаем
+                            его удобным, функциональным и готовым к продвижению. Обратитесь к нам, и ваш сайт станет
+                            эффективным инструментом для роста и привлечения клиентов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="seo-text__img-wrap">
+                    <picture class="img-bg">
+                        <!-- avif -->
+                        <source srcset="assets/images/seo-text/seo-text-img.avif" type="image/avif">
+                        <!-- webp -->
+                        <source srcset="assets/images/seo-text/seo-text-img.webp" type="image/webp">
+                        <!-- jpeg -->
+                        <source srcset="assets/images/seo-text/seo-text-img-sm.jpeg" media="(max-width: 768px)"
+                            type="image/jpeg">
+                        <!-- png -->
+                        <source srcset="assets/images/seo-text/seo-text-img-sm.png" media="(max-width: 768px)"
+                            type="image/png">
+                        <!-- original -->
+                        <img src="assets/images/seo-text/seo-text-img.png" class="img-responsive" alt="" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </section>
         @@include('html/tertiary-form.html')
     </main>
     @@include('html/libs/footer.html')

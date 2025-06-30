@@ -27,6 +27,12 @@
     font-size: clamp-px(16, 20);
     line-height: 150%;
     color: var(--text-text-2);
+
+    &>p {
+        &:not(:last-child) {
+            margin-bottom: clamp-px(12, 24);
+        }
+    }
 }
 
 .seo-text__img-wrap {

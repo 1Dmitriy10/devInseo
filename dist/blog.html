@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@@description" />
+
+    <!-- --------------------------------Стили-------------------------------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ---------------------------------font-awesome------------------------------- -->
+    <!-- font-awesome 4 -->
+    <!-- <link rel="stylesheet" href="./files/font-awesome/css/font-awesome.min.css"> -->
+    <!-- font-awesome 5 -->
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+
+    <!-- --------------------------------фавикон-------------------------------- -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
+    <link rel="manifest" href="files/favicon/site.webmanifest">
+    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5"> -->
+
+    <!-- --------------------------------скрипты-------------------------------- -->
+    <!-- <script defer type="module" src="assets/js/vendor.js"></script> -->
+    <script defer src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
+    <script defer type="module" src="assets/js/main.js"></script>
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Блог</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="container header__container">
+
+        <a href="/" class="logo header__logo">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+
+        <div class="menu">
+            <nav class="nav">
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a href="#" class="nav-link">SEO-продвижение</a>
+            <!-- <ul class="sub-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Пункт меню 2 уровня</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Пункт меню 2 уровня</a>
+                </li>
+            </ul> -->
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Разработка</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Дизайн</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Портфолио</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Контакты</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Блог</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">О компании</a>
+        </li>
+    </ul>
+</nav>
+        </div>
+
+        <div class="lang-box header__lang-box">
+            <div class="lang-box__item-visible">
+                RU
+            </div>
+
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5L5 1L1 5" stroke="#3F7CFF" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <div class="lang-box__item-hidden">
+                <div class="lang-box__item-hidden-item">
+                    ENG
+                </div>
+
+                <div class="lang-box__item-hidden-item">
+                    FR
+                </div>
+
+                <div class="lang-box__item-hidden-item">
+                    ES
+                </div>
+            </div>
+        </div>
+
+        <div class="social-box header__social-box">
+            <a target="_blank" class="social-link" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.2561 4.77297C17.4959 2.97568 15.0627 2 12.5777 2C7.297 2 3.05177 6.26216 3.10354 11.4486C3.10354 13.0919 3.56948 14.6838 4.34605 16.1216L3 21L8.0218 19.7162C9.41962 20.4865 10.9728 20.8459 12.5259 20.8459C17.7548 20.8459 22 16.5838 22 11.3973C22 8.88108 21.0163 6.51892 19.2561 4.77297ZM12.5777 19.2541C11.1798 19.2541 9.78202 18.8946 8.59128 18.1757L8.28065 18.0216L5.27793 18.7919L6.0545 15.8649L5.84741 15.5568C3.56948 11.9108 4.65668 7.08378 8.3842 4.82432C12.1117 2.56486 16.9264 3.64324 19.2044 7.34054C21.4823 11.0378 20.3951 15.8135 16.6676 18.073C15.4768 18.8432 14.0272 19.2541 12.5777 19.2541ZM17.1335 13.5541L16.564 13.2973C16.564 13.2973 15.7357 12.9378 15.218 12.6811C15.1662 12.6811 15.1144 12.6297 15.0627 12.6297C14.9074 12.6297 14.8038 12.6811 14.7003 12.7324C14.7003 12.7324 14.6485 12.7838 13.9237 13.6054C13.8719 13.7081 13.7684 13.7595 13.6649 13.7595H13.6131C13.5613 13.7595 13.4578 13.7081 13.406 13.6568L13.1471 13.5541C12.5777 13.2973 12.0599 12.9892 11.6458 12.5784C11.5422 12.4757 11.3869 12.373 11.2834 12.2703C10.921 11.9108 10.5586 11.5 10.2997 11.0378L10.248 10.9351C10.1962 10.8838 10.1962 10.8324 10.1444 10.7297C10.1444 10.627 10.1444 10.5243 10.1962 10.473C10.1962 10.473 10.4033 10.2162 10.5586 10.0622C10.6621 9.95946 10.7139 9.80541 10.8174 9.7027C10.921 9.54865 10.9728 9.34324 10.921 9.18919C10.8692 8.93243 10.248 7.54595 10.0926 7.23784C9.9891 7.08378 9.88556 7.03243 9.73025 6.98108H9.57493C9.47139 6.98108 9.31608 6.98108 9.16076 6.98108C9.05722 6.98108 8.95368 7.03243 8.85014 7.03243L8.79837 7.08378C8.69482 7.13513 8.59128 7.23784 8.48774 7.28919C8.3842 7.39189 8.33243 7.49459 8.22888 7.5973C7.86649 8.05946 7.6594 8.62432 7.6594 9.18919C7.6594 9.6 7.76294 10.0108 7.91826 10.3703L7.97003 10.5243C8.43597 11.5 9.05722 12.373 9.88556 13.1432L10.0926 13.3486C10.248 13.5027 10.4033 13.6054 10.5068 13.7595C11.594 14.6838 12.8365 15.3514 14.2343 15.7108C14.3896 15.7622 14.5967 15.7622 14.752 15.8135C14.9074 15.8135 15.1144 15.8135 15.2698 15.8135C15.5286 15.8135 15.8392 15.7108 16.0463 15.6081C16.2016 15.5054 16.3052 15.5054 16.4087 15.4027L16.5123 15.3C16.6158 15.1973 16.7193 15.1459 16.8229 15.0432C16.9264 14.9405 17.03 14.8378 17.0817 14.7351C17.1853 14.5297 17.2371 14.273 17.2888 14.0162C17.2888 13.9135 17.2888 13.7595 17.2888 13.6568C17.2888 13.6568 17.2371 13.6054 17.1335 13.5541Z"
+                        fill="#3F7CFF" />
+                </svg>
+            </a>
+
+            <a target="_blank" class="social-link" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.3749 10.3185C7.74359 7.91938 11.3236 6.33777 13.1148 5.57361C18.2292 3.39178 19.2919 3.01277 19.9846 3.00012C20.1369 2.9975 20.4776 3.03623 20.6982 3.21986C20.8845 3.37492 20.9358 3.58438 20.9603 3.73139C20.9848 3.8784 21.0154 4.2133 20.9911 4.47498C20.714 7.46174 19.5147 14.7098 18.9046 18.055C18.6465 19.4705 18.1382 19.9451 17.6461 19.9916C16.5766 20.0925 15.7645 19.2667 14.7287 18.5702C13.1078 17.4805 12.1921 16.8021 10.6188 15.7387C8.80053 14.5097 9.97923 13.8343 11.0154 12.7304C11.2866 12.4415 15.9987 8.04555 16.0899 7.64677C16.1013 7.59689 16.1119 7.41098 16.0042 7.31282C15.8965 7.21465 15.7376 7.24822 15.6229 7.27492C15.4604 7.31276 12.871 9.06814 7.85486 12.5411C7.11988 13.0587 6.45416 13.3109 5.8577 13.2977C5.20015 13.2831 3.93528 12.9164 2.99498 12.6029C1.84166 12.2184 0.925027 12.0151 1.00485 11.362C1.04642 11.0219 1.5031 10.674 2.3749 10.3185Z"
+                        fill="#3F7CFF" />
+                </svg>
+            </a>
+        </div>
+
+
+
+        <!-- кнопка мобильного меню -->
+<button class="mob-nav-btn">
+    <span></span>
+</button>
+    </div>
+</header>
+
+<div class="sticky-header">
+    <div class="container sticky-header__container">
+
+        <a class="logo sticky-header-logo" href="/">
+
+            <img src="assets/images/logo.png" alt="">
+
+        </a>
+
+        <nav class="nav-sticky">
+            <ul class="nav-list-sticky">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Услуги</a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Пункт меню 2 уровня</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Пункт меню 2 уровня</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Прайс-лист</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Портфоли</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Блог</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Контакты</a>
+                </li>
+
+
+
+
+                <!-- добавить скрытый пункт -->
+            </ul>
+        </nav>
+
+        <div class="social-box sticky-header__social-box">
+
+        </div>
+
+        <!-- кнопка мобильного меню -->
+        <button class="mob-nav-btn mob-nav-btn-sticky" id="sticky-menu-open">
+            <span></span>
+        </button>
+
+    </div>
+
+
+</div>
+
+<!-- ===========мобильное меню ===============-->
+
+<!-- выезжающее меню -->
+<nav class="mob-nav" id="mob-menu">
+    <div class="mob-nav__header">
+        <a href="/" class="logo mob-nav__logo">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+
+        <button class="mob-nav__exit">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 18.5L18 6.5M6 6.5L18 18.5" stroke="#111827" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <nav class="mob-nav__nav">
+        <ul class="mob-nav-list">
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">SEO-продвижение</a>
+                <!-- <ul class="spoiler-content-menu">
+                    <li class="mob-nav-item">
+                        <a class="mob-nav-link" href="#">
+                            второй уровень
+                        </a>
+                        <ul class="spoiler-content-menu">
+                            <li class="mob-nav-item">
+                                <a class="mob-nav-link" href="#">
+                                    третий уровень
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="mob-nav-item">
+                        <a class="mob-nav-link" href="#">
+                            второй уровень
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Разработка</a>
+            </li>
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Дизайн</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Портфолио</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Контакты</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">Блог</a>
+            </li>
+
+            <li class="mob-nav-item">
+                <a href="#" class="mob-nav-link">О компании</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mob-nav__link-box">
+        <a class="tel" href="tel:+995551287944">
+            +995 55128 79 44
+        </a>
+
+        <a class="mail" href="mailto:rabotaseoge@gmail.com">
+            rabotaseoge@gmail.com
+        </a>
+
+
+    </div>
+
+    <div class="lang-box__item-hidden_mob">
+
+        <div class="lang-box__item-hidden-item active">
+            RU
+        </div>
+
+        <div class="lang-box__item-hidden-item">
+            ENG
+        </div>
+
+        <div class="lang-box__item-hidden-item">
+            FR
+        </div>
+
+        <div class="lang-box__item-hidden-item">
+            ES
+        </div>
+    </div>
+</nav>
+
+<div class="git-nav-box">
+    <ul>
+        <li>
+            <a href="https://1dmitriy10.github.io/devinseo/">
+                Главная
+            </a>
+        </li>
+
+        <li>
+            <a href="https://1dmitriy10.github.io/devinseo/seo.html">
+                seo
+            </a>
+        </li>
+
+        <li>
+            <a href="https://1dmitriy10.github.io/devinseo/development.html">
+                Разработка
+            </a>
+        </li>
+
+
+
+    </ul>
+</div>
+    <main class="bg_white">
+
+        <section class="breadcrambs">
+    <div class="container breadcrambs__container">
+        <ul class="breadcrambs__list">
+            <li class="breadcrambs__list-item">
+                <a href="#" class="breadcrambs__item-link">
+                    Главная
+                </a>
+            </li>
+            -
+            <li class="breadcrambs__list-item">
+                <span>Блог</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section class='title'>
+    <div class='container title__container'>
+        <h1>Блог</h1>
+    </div>
+</section>
+
+        <section class="content-block">
+            <nav class="blog-nav">
+                <div class="blog-nav-elem blog-nav-elem--active">
+                    <p>Все</p>
+                </div>
+                <div class="blog-nav-elem">
+                    <p>Технологии</p>
+                </div>
+                <div class="blog-nav-elem">
+                    <p>Дизайн</p>
+                </div>
+                <div class="blog-nav-elem">
+                    <p>Маркетинг</p>
+                </div>
+                <div class="blog-nav-elem">
+                    <p>SEO</p>
+                </div>
+                <div class="blog-nav-elem">
+                    <p>Разработка</p>
+                </div>
+            </nav>
+
+            <section class="article-group">
+                <div class="technology-block">
+                    <a class="technology-block-banner" href="#">
+                        <img src="./images/technologies/tech1.webp" class="techbology-block-banner-img">
+                    </a>
+                    <div class="technology-block-content">
+                        <div class="main-article-group">
+                            Технологии
+                        </div>
+
+                        <div class="main-article-header">
+                            <a href="#">Технологии разработки, которые меняют индустрию: тренды, инструменты и
+                                будущее</a>
+                        </div>
+
+                        <p>Разбираемся, какие технологии сегодня определяют развитие разработки, как новые инструменты
+                            упрощают работу программистов,
+                            делает код чище, а процессы - быстрее. Какие тренды останутся с нами надолго, а что уйдёт в
+                            прошлое?</p>
+
+                        <p class="tech-block-content-date">5 марта 2025</p>
+                    </div>
+                </div>
+
+                <div class="articles">
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech2.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech3.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech4.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech5.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech6.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech7.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="article-group">
+                <div class="technology-block">
+                    <a class="technology-block-banner" href="#">
+                        <img src="./images/technologies/tech1.webp" class="techbology-block-banner-img">
+                    </a>
+                    <div class="technology-block-content">
+                        <div class="main-article-group">
+                            Технологии
+                        </div>
+
+                        <div class="main-article-header">
+                            <a href="#">Технологии разработки, которые меняют индустрию: тренды, инструменты и
+                                будущее</a>
+                        </div>
+
+                        <p>Разбираемся, какие технологии сегодня определяют развитие разработки, как новые инструменты
+                            упрощают работу программистов,
+                            делает код чище, а процессы - быстрее. Какие тренды останутся с нами надолго, а что уйдёт в
+                            прошлое?</p>
+
+                        <p class="tech-block-content-date">5 марта 2025</p>
+                    </div>
+                </div>
+
+                <div class="articles">
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech2.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech3.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech4.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech5.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech6.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <a href="#" class="img-container">
+                                <img src="./images/technologies/tech7.webp">
+                            </a>
+                            <figcaption>
+                                <div class="article-group">Технологии</div>
+                                <div class="article-header"><a href="#">Технологии разработки, которые меняют индустрию:
+                                        тренды, инструменты и будущее</a></div>
+                                <span class="article-date">5 марта 2025</span>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                </div>
+            </section>
+
+
+
+
+            <div class="pagination-container">
+    <div class="show-more-container">
+        <a href="#" class="show-more">Показать ещё 10</a>
+    </div>
+
+    <div class="pagination">
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="page">5</a>
+        <a href="#" class="next"><span class="not-for-mobile">Вперёд </span>→</a>
+    </div>
+</div>
+        </section>
+
+
+
+        <section class='main-form bg_white border_bg pb_160 mob-p_0'>
+    <div class='container main-form__container'>
+        <div class="main-form__wrap">
+            <div class="main-form__text-box">
+                <div class="main-form__title">
+                    Поможем вашему бизнесу<br>в продвижениии
+                </div>
+
+                <div class="main-form__subtitle">
+                    Больше трафика, больше клиентов, больше прибыли. Оставьте заявку — обсудим стратегию для вас.
+                </div>
+
+                <form class="primary-form" action="">
+                    <div class="form__row">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form__row">
+                        <input type="text" name="tel" placeholder="___ ___ __ __">
+                    </div>
+
+                    <button class="btn primary-form__btn" type="submit">Отправить</button>
+
+                    <div class="agree-box">
+
+                        <span>Заполняя эту форму, Вы соглашаетесь с правилами
+                            <a href="#">Политики Конфиденциальности</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="main-form__img-box">
+                <picture>
+                    <!-- avif -->
+                    <source srcset='assets/images/form/main-form-img.avif' type='image/avif' />
+                    <!-- webp -->
+                    <source srcset='assets/images/form/main-form-img.webp' type='image/webp' />
+                    <!-- jpeg -->
+                    <source srcset='assets/images/form/main-form-img-sm.jpeg' media='(max-width: 768px)' type='image/jpeg' />
+                    <!-- png -->
+                    <source srcset='assets/images/form/main-form-img-sm.png' media='(max-width: 768px)' type='image/jpeg' />
+                    <!-- original -->
+                    <img src='assets/images/form/main-form-img.png' class='img-responsive' alt='' loading='lazy' />
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class='footer'>
+    <div class='container footer__container'>
+
+        <div class="footer__up">
+            <a href="/" class="logo footer__logo">
+                <img src="assets/images/logo.png" alt="">
+                <span>
+                    Компания SEO-Service
+                </span>
+            </a>
+
+            <div class="menu footer__menu">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">SEO-продвижение</a>
+                            <!-- <ul class="sub-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Пункт меню 2 уровня</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Пункт меню 2 уровня</a>
+                </li>
+            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Разработка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Дизайн</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Портфолио</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">О компании</a>
+                        </li>
+
+                        <li class="nav__item-wrap" style="display: none;">
+                            <div class="nav__item-opacity-wrap">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m6 20a4 4 0 1 1 4-4 4 4 0 0 1 -4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0 -2-2z">
+                                    </path>
+                                    <path d="m16 20a4 4 0 1 1 4-4 4 4 0 0 1 -4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0 -2-2z">
+                                    </path>
+                                    <path d="m26 20a4 4 0 1 1 4-4 4 4 0 0 1 -4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0 -2-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <ul class="nav__item-opacity"></ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="lang-box footer__lang-box">
+                <div class="lang-box__item-visible">
+                    RU
+                </div>
+
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5L5 1L1 5" stroke="#3F7CFF" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+
+                <div class="lang-box__item-hidden">
+                    <div class="lang-box__item-hidden-item">
+                        ENG
+                    </div>
+
+                    <div class="lang-box__item-hidden-item">
+                        FR
+                    </div>
+
+                    <div class="lang-box__item-hidden-item">
+                        ES
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__down">
+
+            <div class="footer__down-col">
+                <div class="footer__down-col-title">
+                    Юридический адрес
+                </div>
+
+                <div class="footer__down-col-text-box">
+                    <div class="address">
+                        Georgia, City Batumi, Zhiuli Shartava Avenue, N 32, Apartment N87, Floor 6
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__down-col">
+                <div class="footer__down-col-title">
+                    E-mail
+                </div>
+
+                <div class="footer__down-col-text-box">
+                    <a class="mail" href="mailto:rabotaseoge@gmail.com">
+                        rabotaseoge@gmail.com
+                    </a>
+
+                    <a class="mail" href="mailto:rabotaseoge@yandex.ru">
+                        rabotaseoge@yandex.ru
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__down-col">
+                <div class="footer__down-col-title">
+                    Телефон
+                </div>
+
+                <div class="footer__down-col-text-box">
+                    <a class="tel" href="tel:+995551287944">
+                        +995 55128 79 44
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__down-col">
+                <div class="footer__down-col-title">
+                    Связаться с нами
+                </div>
+
+                <div class="footer__down-col-text-box">
+                    <div class="social-box footer__social-box">
+                        <a target="_blank" class="social-link" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.2561 4.77297C17.4959 2.97568 15.0627 2 12.5777 2C7.297 2 3.05177 6.26216 3.10354 11.4486C3.10354 13.0919 3.56948 14.6838 4.34605 16.1216L3 21L8.0218 19.7162C9.41962 20.4865 10.9728 20.8459 12.5259 20.8459C17.7548 20.8459 22 16.5838 22 11.3973C22 8.88108 21.0163 6.51892 19.2561 4.77297ZM12.5777 19.2541C11.1798 19.2541 9.78202 18.8946 8.59128 18.1757L8.28065 18.0216L5.27793 18.7919L6.0545 15.8649L5.84741 15.5568C3.56948 11.9108 4.65668 7.08378 8.3842 4.82432C12.1117 2.56486 16.9264 3.64324 19.2044 7.34054C21.4823 11.0378 20.3951 15.8135 16.6676 18.073C15.4768 18.8432 14.0272 19.2541 12.5777 19.2541ZM17.1335 13.5541L16.564 13.2973C16.564 13.2973 15.7357 12.9378 15.218 12.6811C15.1662 12.6811 15.1144 12.6297 15.0627 12.6297C14.9074 12.6297 14.8038 12.6811 14.7003 12.7324C14.7003 12.7324 14.6485 12.7838 13.9237 13.6054C13.8719 13.7081 13.7684 13.7595 13.6649 13.7595H13.6131C13.5613 13.7595 13.4578 13.7081 13.406 13.6568L13.1471 13.5541C12.5777 13.2973 12.0599 12.9892 11.6458 12.5784C11.5422 12.4757 11.3869 12.373 11.2834 12.2703C10.921 11.9108 10.5586 11.5 10.2997 11.0378L10.248 10.9351C10.1962 10.8838 10.1962 10.8324 10.1444 10.7297C10.1444 10.627 10.1444 10.5243 10.1962 10.473C10.1962 10.473 10.4033 10.2162 10.5586 10.0622C10.6621 9.95946 10.7139 9.80541 10.8174 9.7027C10.921 9.54865 10.9728 9.34324 10.921 9.18919C10.8692 8.93243 10.248 7.54595 10.0926 7.23784C9.9891 7.08378 9.88556 7.03243 9.73025 6.98108H9.57493C9.47139 6.98108 9.31608 6.98108 9.16076 6.98108C9.05722 6.98108 8.95368 7.03243 8.85014 7.03243L8.79837 7.08378C8.69482 7.13513 8.59128 7.23784 8.48774 7.28919C8.3842 7.39189 8.33243 7.49459 8.22888 7.5973C7.86649 8.05946 7.6594 8.62432 7.6594 9.18919C7.6594 9.6 7.76294 10.0108 7.91826 10.3703L7.97003 10.5243C8.43597 11.5 9.05722 12.373 9.88556 13.1432L10.0926 13.3486C10.248 13.5027 10.4033 13.6054 10.5068 13.7595C11.594 14.6838 12.8365 15.3514 14.2343 15.7108C14.3896 15.7622 14.5967 15.7622 14.752 15.8135C14.9074 15.8135 15.1144 15.8135 15.2698 15.8135C15.5286 15.8135 15.8392 15.7108 16.0463 15.6081C16.2016 15.5054 16.3052 15.5054 16.4087 15.4027L16.5123 15.3C16.6158 15.1973 16.7193 15.1459 16.8229 15.0432C16.9264 14.9405 17.03 14.8378 17.0817 14.7351C17.1853 14.5297 17.2371 14.273 17.2888 14.0162C17.2888 13.9135 17.2888 13.7595 17.2888 13.6568C17.2888 13.6568 17.2371 13.6054 17.1335 13.5541Z"
+                                    fill="#3F7CFF"></path>
+                            </svg>
+                        </a>
+
+                        <a target="_blank" class="social-link" href="#">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.3749 10.3331C7.74359 7.93403 11.3236 6.35241 13.1148 5.58825C18.2292 3.40642 19.2919 3.02742 19.9846 3.01477C20.1369 3.01215 20.4776 3.05088 20.6982 3.23451C20.8845 3.38957 20.9358 3.59903 20.9603 3.74604C20.9848 3.89305 21.0154 4.22795 20.9911 4.48963C20.714 7.47639 19.5147 14.7245 18.9046 18.0697C18.6465 19.4852 18.1382 19.9598 17.6461 20.0062C16.5766 20.1072 15.7645 19.2813 14.7287 18.5849C13.1078 17.4951 12.1921 16.8168 10.6188 15.7533C8.80053 14.5244 9.97923 13.8489 11.0154 12.7451C11.2866 12.4562 15.9987 8.0602 16.0899 7.66142C16.1013 7.61154 16.1119 7.42563 16.0042 7.32747C15.8965 7.2293 15.7376 7.26287 15.6229 7.28957C15.4604 7.32741 12.871 9.08279 7.85486 12.5557C7.11988 13.0734 6.45416 13.3256 5.8577 13.3124C5.20015 13.2978 3.93528 12.931 2.99498 12.6175C1.84166 12.233 0.925027 12.0297 1.00485 11.3767C1.04642 11.0365 1.5031 10.6887 2.3749 10.3331Z"
+                                    fill="#3F7CFF" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer__copy">
+            <a href="#">
+                Политика конфиденциальности
+            </a>
+
+            <div>
+                Copyright © 2025 INSEO service | Powered by INSEO service
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>

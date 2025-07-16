@@ -1,19 +1,74 @@
 // ============== [Пагинация] =================
 
+/*START OF PAGINATION CODE*/
+.pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--font-family);
+    margin-top: 70px;
+}
+
+.show-more-container {
+    background: var(--borders-border-brand);
+    color: var(--text-text--white);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+}
+
+.show-more {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--text-text--white);
+    text-decoration: none;
+}
+
 .pagination {
     display: flex;
+    gap: 12px;
 }
 
-.pagination__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.page {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: center;
+    color: var(--text-text-1);
+    border-radius: 12px;
+    padding: 16px 14px;
+    width: 58px;
+    height: 58px;
+    background: var(--background-bg-4);
+    text-decoration: none;
 }
 
-.pagination__list-item {}
 
-.pagination__item-link {
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
+.page.active {
+    background: var(--button-main-blue);
+    color: var(--text-text--white);
+    font-family: var(--second-family);
 }
+
+.next {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--button-main-blue);
+    border-radius: 12px;
+    padding: 17px 16px 17px 24px;
+    text-decoration: none;
+    background: var(--background-bg-4);
+}
+
+.page:hover:not(.active),
+.next:hover {
+    background-color: #e2e6f0;
+}
+
+/*END OF PAGINATION CODE*/

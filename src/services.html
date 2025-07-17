@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/libs/head.html',{
+"title": "Услуги"
+})
+
+<body>
+    @@include('html/libs/header.html')
+    <main>
+
+        <section class="breadcrambs bg_blue">
+            <div class="container breadcrambs__container">
+                <ul class="breadcrambs__list">
+                    <li class="breadcrambs__list-item">
+                        <a href="#" class="breadcrambs__item-link">
+                            Главная
+                        </a>
+                    </li>
+                    -
+                    <li class="breadcrambs__list-item">
+                        <span>Услуги</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="services pb_160 mb_0">
+            <div class="container services-container">
+                <div class="services-page-header">
+                    <h1>Услуги</h1>
+                </div>
+                <div class="services-cards">
+                    <div class="service-card">
+                        <a href="#" class="service-card-banner">
+                            <img src="@img/services/layer1.webp" alt="service-layer 1" class="service-card-banner-img">
+                        </a>
+                        <div class="service-card-content">
+                            <div class="service-card-content-container">
+                                <div class="service-card-header"><a href="#">SEO</a></div>
+                                <p>Оптимизируем сайт для поисковых систем Google, Bin, Yandex, увеличиваем
+                                    видимость и привлекаем трафик.</p>
+                            </div>
+                            <a href="#" class="service-card-link"><img src="@img/services/arrow.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <a href="#" class="service-card-banner">
+                            <img src="@img/services/layer2.webp" alt="service-layer 1" class="service-card-banner-img">
+                        </a>
+                        <div class="service-card-content">
+                            <div class="service-card-content-container">
+                                <div class="service-card-header"><a href="#">UX/UI design</a></div>
+                                <p>Создаем удобный, стильный и логичный интерфейс, который улучшает
+                                    пользовательский опыт.</p>
+                            </div>
+                            <a href="#" class="service-card-link"><img src="@img/services/arrow.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <a href="#" class="service-card-banner">
+                            <img src="@img/services/layer3.webp" alt="service-layer 1" class="service-card-banner-img">
+                        </a>
+                        <div class="service-card-content">
+                            <div class="service-card-content-container">
+                                <div class="service-card-header"><a href="#">Development</a></div>
+                                <p>Превращаем дизайн в работающий сайт с быстрой загрузкой, адаптивностью и
+                                    нужным функционалом.</p>
+                            </div>
+                            <a href="#" class="service-card-link"><img src="@img/services/arrow.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps bg_white border_bg pb_160 border_bg br_t pt_160">
+            <div class="container steps__container">
+                <h2 class="title">
+                    Этапы
+                </h2>
+
+                <div class="steps__card-box card-box-grid cols_4" data-col-gap="24" data-row-gap="24">
+                    <div class="card">
+                        <div class="card_5">
+                            <div class="card_5__header">
+                                <div class="card_5__number"></div>
+                            </div>
+
+                            <div class="card_5__title">Заявка</div>
+
+                            <div class="card_5__text">
+                                Оставьте заявку на сайте, либо свяжитесь с нами любым другим удобным для вас способом
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_5">
+                            <div class="card_5__header">
+                                <div class="card_5__number"></div>
+                            </div>
+
+                            <div class="card_5__title">Договор и оплата</div>
+
+                            <div class="card_5__text">
+                                После изучения необходимого объема работ, мы согласуем все детали и формируем договор.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_5">
+                            <div class="card_5__header">
+                                <div class="card_5__number"></div>
+                            </div>
+
+                            <div class="card_5__title">Отчетность и контроль</div>
+
+                            <div class="card_5__text">
+                                Регулярно предоставляем отчеты, отслеживаем результаты и вносим корректировки.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_5">
+                            <div class="card_5__header">
+                                <div class="card_5__number"></div>
+                            </div>
+
+                            <div class="card_5__title">Результат</div>
+
+                            <div class="card_5__text">
+                                В результате сотрудничества с нашей компанией, вы получите качественный результат.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-form-section bg_white border_bg pb_160">
+            <div class="container second-form__container">
+
+                <picture class="second-form_bg">
+                    <!-- avif -->
+                    <source srcset="assets/images/form/second-form-bg.avif" type="image/avif">
+                    <!-- webp -->
+                    <source srcset="assets/images/form/second-form-bg.webp" type="image/webp">
+                    <!-- jpeg -->
+                    <source srcset="assets/images/form/second-form-bg-sm.jpeg" media="(max-width: 768px)"
+                        type="image/jpeg">
+                    <!-- png -->
+                    <source srcset="assets/images/form/second-form-bg-sm.png" media="(max-width: 768px)"
+                        type="image/png">
+                    <!-- original -->
+                    <img src="assets/images/form/second-form-bg.png" class="img-responsive" alt="" loading="lazy">
+                </picture>
+
+                <div class="second-form__text-box">
+                    <div class="second-form__title">
+                        Улучшим ваш поисковой маркетинг
+                    </div>
+                    <div class="second-form__subtitle">
+                        Оставьте заявку, и мы поможем вам вывести ваш бизнес в топ поисковых систем!
+                    </div>
+                </div>
+
+                <div class="second-form__form-box">
+                    <form class="second-form" action="">
+
+                        <div class="form__double-row">
+                            <div class="form__row">
+                                <input type="text" name="name" placeholder="Ваше имя">
+                            </div>
+
+                            <div class="form__row">
+                                <input type="text" name="tel" placeholder="___ ___ __ __">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+                            <textarea name="text" id=""
+                                placeholder="Расскажите о вашем бизнесе: тематика, цели, текущее состояние"></textarea>
+                        </div>
+
+                        <div class="form-btn-box">
+                            <button class="btn primary-form__btn" type="submit">Отправить заявку</button>
+
+                            <div class="agree-box">
+
+                                <span>Заполняя эту форму, Вы соглашаетесь с правилами
+                                    <a href="#">Политики Конфиденциальности</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class='reviews-prev bg_white border_bg pb_160 overflow br_b'>
+            <div class='container reviews-prev__container'>
+                <div class="title-nav-box">
+                    <h2 class="title">
+                        Отзывы
+                    </h2>
+
+                    <div class="slider-btns mob-hidden">
+                        <!-- Кнопки навигации -->
+                        <div class="slider-btn slider-btn-prev reviews__slider-btn-prev">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 17L1 9L9 1" stroke="#3F7CFF" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="slider-btn slider-btn-next reviews__slider-btn-next">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 17L9 9L1 1" stroke="#3F7CFF" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-wrap reviews__slider-wrap">
+                    <!-- Слайдер -->
+                    <div class="swiper reviews-slider width_100">
+                        <!-- Обертка слайдера -->
+                        <div class="swiper-wrapper reviews-slider-wrapper height_100">
+                            <!-- Слайды -->
+                            <div class="swiper-slide height_100">
+                                <div class="card_6">
+                                    <a class="card_6__link" href="#"></a>
+
+                                    <div class="card_6__header">
+                                        <div class="card_6__icon">
+                                            <picture class='img-bg'>
+                                                <!-- avif -->
+                                                <source srcset='@img/reviews/reviews-img-1.avif' type='image/avif' />
+                                                <!-- webp -->
+                                                <source srcset='@img/reviews/reviews-img-1.webp' type='image/webp' />
+                                                <!-- jpeg -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.jpeg'
+                                                    media='(max-width: 768px)' type='image/jpeg' />
+                                                <!-- png -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.png'
+                                                    media='(max-width: 768px)' type='image/png' />
+                                                <!-- original -->
+                                                <img src='@img/reviews/reviews-img-1.png' class='img-responsive' alt=''
+                                                    loading='lazy' />
+                                            </picture>
+                                        </div>
+
+                                        <div class="card_6__name-box">
+                                            <div class="card_6__name">
+                                                Алексей М.
+                                            </div>
+
+                                            <div class="card_6__company">
+                                                Компания El Mundo Bordado
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__rating-box">
+                                        <div class="rating">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="card_6__rating-date">
+                                            05.06.2023
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__text">
+                                        Работать с INSEO Services было одно удовольствие! Наш сайт поднялся в поисковой
+                                        выдаче,
+                                        и мы начали получать больше клиентов. Команда всегда была на связи и
+                                        предоставляла
+                                        регулярные отчеты. Очень рекомендую!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide height_100">
+                                <div class="card_6">
+                                    <a class="card_6__link" href="#"></a>
+
+                                    <div class="card_6__header">
+                                        <div class="card_6__icon">
+                                            <picture class='img-bg'>
+                                                <!-- avif -->
+                                                <source srcset='@img/reviews/reviews-img-2.avif' type='image/avif' />
+                                                <!-- webp -->
+                                                <source srcset='@img/reviews/reviews-img-2.webp' type='image/webp' />
+                                                <!-- jpeg -->
+                                                <source srcset='@img/reviews/reviews-img-2-sm.jpeg'
+                                                    media='(max-width: 768px)' type='image/jpeg' />
+                                                <!-- png -->
+                                                <source srcset='@img/reviews/reviews-img-2-sm.png'
+                                                    media='(max-width: 768px)' type='image/png' />
+                                                <!-- original -->
+                                                <img src='@img/reviews/reviews-img-2.png' class='img-responsive' alt=''
+                                                    loading='lazy' />
+                                            </picture>
+                                        </div>
+
+                                        <div class="card_6__name-box">
+                                            <div class="card_6__name">
+                                                Алексей М.
+                                            </div>
+
+                                            <div class="card_6__company">
+                                                Владелец магазина
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__rating-box">
+                                        <div class="rating">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="card_6__rating-date">
+                                            18.03.2022
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__text">
+                                        Работа с INSEO Services по дизайну была великолепной! Команда создала для нас
+                                        стильный и
+                                        современный дизайн, который идеально соответствует нашему бренду. Все наши
+                                        пожелания
+                                        были учтены, и результат превзошел ожидания. Рекомендую INSEO Services за их
+                                        креативный
+                                        подход и профессионализм.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide height_100">
+                                <div class="card_6">
+                                    <a class="card_6__link" href="#"></a>
+
+                                    <div class="card_6__header">
+                                        <div class="card_6__icon">
+                                            <picture class='img-bg'>
+                                                <!-- avif -->
+                                                <source srcset='@img/reviews/reviews-img-1.avif' type='image/avif' />
+                                                <!-- webp -->
+                                                <source srcset='@img/reviews/reviews-img-1.webp' type='image/webp' />
+                                                <!-- jpeg -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.jpeg'
+                                                    media='(max-width: 768px)' type='image/jpeg' />
+                                                <!-- png -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.png'
+                                                    media='(max-width: 768px)' type='image/png' />
+                                                <!-- original -->
+                                                <img src='@img/reviews/reviews-img-1.png' class='img-responsive' alt=''
+                                                    loading='lazy' />
+                                            </picture>
+                                        </div>
+
+                                        <div class="card_6__name-box">
+                                            <div class="card_6__name">
+                                                Евгений Н.
+                                            </div>
+
+                                            <div class="card_6__company">
+                                                Частный инвестор
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__rating-box">
+                                        <div class="rating">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="card_6__rating-date">
+                                            10.11.2023
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__text">
+                                        INSEO Services сделали для нас потрясающий сайт! Процесс был гладким и
+                                        эффективным, от
+                                        первоначального концепта до финального запуска. Команда проявила высокий уровень
+                                        технических знаний и внимания к деталям. Теперь у нас есть функциональный и
+                                        красивый
+                                        сайт, который привлекает клиентов. Очень доволен результатом!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide height_100">
+                                <div class="card_6">
+                                    <a class="card_6__link" href="#"></a>
+
+                                    <div class="card_6__header">
+                                        <div class="card_6__icon">
+                                            <picture class='img-bg'>
+                                                <!-- avif -->
+                                                <source srcset='@img/reviews/reviews-img-1.avif' type='image/avif' />
+                                                <!-- webp -->
+                                                <source srcset='@img/reviews/reviews-img-1.webp' type='image/webp' />
+                                                <!-- jpeg -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.jpeg'
+                                                    media='(max-width: 768px)' type='image/jpeg' />
+                                                <!-- png -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.png'
+                                                    media='(max-width: 768px)' type='image/png' />
+                                                <!-- original -->
+                                                <img src='@img/reviews/reviews-img-1.png' class='img-responsive' alt=''
+                                                    loading='lazy' />
+                                            </picture>
+                                        </div>
+
+                                        <div class="card_6__name-box">
+                                            <div class="card_6__name">
+                                                Алексей М.
+                                            </div>
+
+                                            <div class="card_6__company">
+                                                Компания El Mundo Bordado
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__rating-box">
+                                        <div class="rating">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="card_6__rating-date">
+                                            05.06.2023
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__text">
+                                        Работать с INSEO Services было одно удовольствие! Наш сайт поднялся в поисковой
+                                        выдаче,
+                                        и мы начали получать больше клиентов. Команда всегда была на связи и
+                                        предоставляла
+                                        регулярные отчеты. Очень рекомендую!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide height_100">
+                                <div class="card_6">
+                                    <a class="card_6__link" href="#"></a>
+
+                                    <div class="card_6__header">
+                                        <div class="card_6__icon">
+                                            <picture class='img-bg'>
+                                                <!-- avif -->
+                                                <source srcset='@img/reviews/reviews-img-1.avif' type='image/avif' />
+                                                <!-- webp -->
+                                                <source srcset='@img/reviews/reviews-img-1.webp' type='image/webp' />
+                                                <!-- jpeg -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.jpeg'
+                                                    media='(max-width: 768px)' type='image/jpeg' />
+                                                <!-- png -->
+                                                <source srcset='@img/reviews/reviews-img-1-sm.png'
+                                                    media='(max-width: 768px)' type='image/png' />
+                                                <!-- original -->
+                                                <img src='@img/reviews/reviews-img-1.png' class='img-responsive' alt=''
+                                                    loading='lazy' />
+                                            </picture>
+                                        </div>
+
+                                        <div class="card_6__name-box">
+                                            <div class="card_6__name">
+                                                Алексей М.
+                                            </div>
+
+                                            <div class="card_6__company">
+                                                Компания El Mundo Bordado
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__rating-box">
+                                        <div class="rating">
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.9458 8.83102C1.68476 8.58961 1.82656 8.1532 2.17964 8.11134L7.18262 7.51793C7.32652 7.50087 7.45151 7.4105 7.51221 7.27892L9.6224 2.70409C9.77132 2.38123 10.2303 2.38117 10.3792 2.70403L12.4894 7.27882C12.5501 7.41041 12.6743 7.50102 12.8182 7.51808L17.8215 8.11134C18.1745 8.1532 18.3159 8.58974 18.0549 8.83115L14.3565 12.252C14.2501 12.3504 14.2027 12.4968 14.231 12.6389L15.2125 17.5803C15.2818 17.9291 14.9107 18.1993 14.6004 18.0256L10.2043 15.5642C10.0778 15.4934 9.92422 15.4938 9.79777 15.5645L5.4012 18.025C5.09094 18.1986 4.71912 17.9291 4.78841 17.5803L5.77012 12.6392C5.79836 12.4971 5.75111 12.3503 5.64472 12.2519L1.9458 8.83102Z"
+                                                    fill="#6897FC" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="card_6__rating-date">
+                                            05.06.2023
+                                        </div>
+                                    </div>
+
+                                    <div class="card_6__text">
+                                        Работать с INSEO Services было одно удовольствие! Наш сайт поднялся в поисковой
+                                        выдаче,
+                                        и мы начали получать больше клиентов. Команда всегда была на связи и
+                                        предоставляла
+                                        регулярные отчеты. Очень рекомендую!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-text pt_160 pb_160 mb_0 bg_blue">
+            <div class="container seo-text__container">
+                <div class="seo-text__text-box">
+                    <h2 class="title">
+                        digital-услуги для вашего бизнеса
+                    </h2>
+
+                    <div class="seo-text__text">
+                        <p>
+                            Мы разрабатываем, продвигаем и поддерживаем решения, которые помогают вашему бизнесу расти.
+                            В работе учитываем цели проекта, особенности рынка и современные технологии, чтобы каждый
+                            клиент получил эффективный инструмент для развития.
+                        </p>
+
+                        <p>
+                            В нашей команде специалисты по разработке, дизайну и маркетингу, которые создают сайты,
+                            оптимизируют их для поисковых систем, настраивают рекламу и обеспечивают техническую
+                            поддержку. Мы работаем с проектами разного масштаба — от небольших сайтов до сложных
+                            веб-приложений.
+                            Каждая услуга направлена на то, чтобы сделать бизнес заметным, конкурентоспособным и
+                            успешным в цифровой среде.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="seo-text__img-wrap">
+                    <picture class="img-bg">
+                        <!-- avif -->
+                        <source srcset="assets/images/seo-text/seo-text-img.avif" type="image/avif">
+                        <!-- webp -->
+                        <source srcset="assets/images/seo-text/seo-text-img.webp" type="image/webp">
+                        <!-- jpeg -->
+                        <source srcset="assets/images/seo-text/seo-text-img-sm.jpeg" media="(max-width: 768px)"
+                            type="image/jpeg">
+                        <!-- png -->
+                        <source srcset="assets/images/seo-text/seo-text-img-sm.png" media="(max-width: 768px)"
+                            type="image/png">
+                        <!-- original -->
+                        <img src="assets/images/seo-text/seo-text-img.png" class="img-responsive" alt="" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="tertiary-form-wrap mb_0 pb_160 bg_blue">
+            <div class="container tertiary-form__container">
+                <div class="tertiary-form__bg">
+                    <picture class="img-bg">
+                        <!-- avif -->
+                        <source srcset="assets/images/form/tertiary-form-bg.avif" type="image/avif">
+                        <!-- webp -->
+                        <source srcset="assets/images/form/tertiary-form-bg.webp" type="image/webp">
+                        <!-- jpeg -->
+                        <source srcset="assets/images/form/tertiary-form-bg-sm.jpeg" media="(max-width: 768px)"
+                            type="image/jpeg">
+                        <!-- png -->
+                        <source srcset="assets/images/form/tertiary-form-bg-sm.png" media="(max-width: 768px)"
+                            type="image/png">
+                        <!-- original -->
+                        <img src="assets/images/form/tertiary-form-bg.png" class="img-responsive" alt="" loading="lazy">
+                    </picture>
+                </div>
+                <div class="tertiary-form__header">
+                    <div class="tertiary-form__title">
+                        Предолагаем не терять время и перейти
+                    </div>
+
+                    <button class="tertiary-form__link">
+                        к Обсуждению<br> проекта
+                    </button>
+                </div>
+
+                <div class="tertiary-form__footer">
+                    <div class="tertiary-form__subtitle">
+                        наша почта
+                    </div>
+                    <a href="mailto:rabotaseoge@gmail.com" class="tertiary-form__mail">
+                        rabotaseoge@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    @@include('html/libs/footer.html')
+</body>
+
+</html>

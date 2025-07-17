@@ -34,3 +34,8 @@
     line-height: 156%;
     color: var(--text-text-1);
 }
+
+.breadcrambs.bg_blue {
+    margin-bottom: 0;
+    padding-bottom: clamp(1.5rem, 0.8021091811rem + 2.9776674938vw, 3.75rem);
+}

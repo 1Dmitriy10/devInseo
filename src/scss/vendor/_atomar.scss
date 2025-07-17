@@ -135,6 +135,10 @@
     margin-bottom: clamp-px(64, 160) !important;
 }
 
+.mb_0 {
+    margin-bottom: 0 !important;
+}
+
 .c_grey {
     color: var(--text-text-3);
 }
@@ -145,6 +149,10 @@
 
 .bg_white {
     background: var(--text-text--white);
+}
+
+.bg_blue {
+    background: var(--background-bg-1);
 }
 
 .c_white {

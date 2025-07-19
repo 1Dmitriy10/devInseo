@@ -1,5 +1,11 @@
 h1 {
-    @include font(var(--fwH1), var(--fsH1), var(--colorH1), 140%);
+    // @include font(var(--fwH1), var(--fsH1), var(--colorH1), 140%);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp-px(38, 80);
+    line-height: 115%;
+    text-transform: uppercase;
+    color: var(--text-text-1);
 }
 
 p {

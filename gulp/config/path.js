@@ -14,8 +14,8 @@ export const path = {
         vendorCss: `${buildFolder}/assets/css/`,
         html: `${buildFolder}/`,
         img: `${buildFolder}/assets/images/`,
-        fonts: `${buildFolder}/fonts/`,
-        files: `${buildFolder}/files/`,
+        fonts: `${buildFolder}/assets/fonts/`,
+        files: `${buildFolder}/assets/files/`,
         favicon: `${buildFolder}/favicon/`,
     },
     src: {                                  // пути исходников
@@ -41,5 +41,5 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: `test`
+    ftp: `/seo-dius.ru/public_html/templates/seo/assets/`
 }

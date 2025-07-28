@@ -158,6 +158,60 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 
 });
 
+const teamSlider = new Swiper('.team-swiper', {
+    // Стрелки
+    navigation: {
+        nextEl: '.reviews__slider-btn-next',
+        prevEl: '.reviews__slider-btn-prev',
+    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true
+    //   },
+    /*Отступ у карточек*/
+    spaceBetween: 12,
+    /*Показывать по n карточек*/
+    slidesPerView: 1.2,
+    /* При достижении конца, перепрыгнуть в начало */
+    // rewind: true,
+    /*Увеличение при наведении курсора мыши */
+    // zoom: true,
+    /*Ленивая подгрузка */
+    // lazy: true,
+    /*Бесконечная прокрутка */
+    // loop: true,
+    /*Ориентация */
+    // direction: 'vertical',
+    /*Авто высота*/
+    // autoHeight: true,
+    /*иконка захвата при наведении на слайд*/
+    grabCursor: true,
+    /*Автоматическое перелистывание*/
+    // autoplay: {
+    //     delay: 5000,
+    //   },
+    /*Брек-поинты*/
+    breakpoints: {
+        1440: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        575: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+        }
+    },
+
+});
+
 
 
 

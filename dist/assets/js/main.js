@@ -1582,6 +1582,60 @@ const reviewsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](
 
 });
 
+const teamSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.team-swiper', {
+    // Стрелки
+    navigation: {
+        nextEl: '.reviews__slider-btn-next',
+        prevEl: '.reviews__slider-btn-prev',
+    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true
+    //   },
+    /*Отступ у карточек*/
+    spaceBetween: 12,
+    /*Показывать по n карточек*/
+    slidesPerView: 1.2,
+    /* При достижении конца, перепрыгнуть в начало */
+    // rewind: true,
+    /*Увеличение при наведении курсора мыши */
+    // zoom: true,
+    /*Ленивая подгрузка */
+    // lazy: true,
+    /*Бесконечная прокрутка */
+    // loop: true,
+    /*Ориентация */
+    // direction: 'vertical',
+    /*Авто высота*/
+    // autoHeight: true,
+    /*иконка захвата при наведении на слайд*/
+    grabCursor: true,
+    /*Автоматическое перелистывание*/
+    // autoplay: {
+    //     delay: 5000,
+    //   },
+    /*Брек-поинты*/
+    breakpoints: {
+        1440: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        575: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+        }
+    },
+
+});
+
 
 
 
@@ -14071,6 +14125,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function gitNav() {
     let block = document.querySelector(".git-nav-box");
+    if(!block){return null}
     
     block.addEventListener("click", function() {
         block.classList.toggle("show");
@@ -14307,3 +14362,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
+//# sourceMappingURL=main.js.map

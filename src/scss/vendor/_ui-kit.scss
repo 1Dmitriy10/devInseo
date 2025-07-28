@@ -11,6 +11,9 @@
     line-height: 150%;
     color: var(--text-text--white);
     transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         transition: 0.3s;
@@ -241,6 +244,7 @@
     display: flex;
     flex-direction: column;
     gap: clamp-px(12, 18);
+    margin-left: clamp-px(16, 18);
 }
 
 .card_3__title {

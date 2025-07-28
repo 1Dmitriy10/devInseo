@@ -103,6 +103,7 @@
         flex: 0 1 calc((100% - 8px * 2) / 3);
         min-height: auto;
         height: clamp-px(114, 207);
+        position: relative;
 
         & .card_1__title {
             counter-increment: count 1;
@@ -152,4 +153,23 @@
     @include respond-to("tel") {
         max-width: 100%;
     }
+}
+
+.main-banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card_1-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

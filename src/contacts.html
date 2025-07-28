@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/libs/head.html',{
+"title": "Контакты"
+})
+
+<body>
+    @@include('html/libs/header.html')
+    <main class="">
+
+        @@include('html/libs/breadcrambs.html',{
+        "name": "Контакты"
+        })
+
+        @@include('html/libs/title.html',{
+        "title": "Контакты"
+        })
+
+        <section class="contacts-section">
+            <div class="container contacts__container">
+                <div class="contacts">
+                    <div class="email-container contact-container">
+                        <div class="contact-content">
+                            <div class="tiny-header">Email</div>
+                            <div class="email-links">
+                                <a href="mailto: rabotaseoge@gmail.com" target="_blank">rabotaseoge@gmail.com</a><br>
+                                <a href="mailto: rabotaseoge@yandex.ru" target="_blank"
+                                    class="second-link">rabotaseoge@yandex.ru</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="messengers-container contact-container">
+                        <div class="contact-content">
+                            <div class="tiny-header">Мессенджеры</div>
+                            <div class="messenger-links">
+                                <a href="#" target="_blank" class="img-link"><img src="./images/icons/whatsapp.svg"
+                                        alt="whatsapp icon" class="whatsapp-img" /></a>
+                                <a href="#" target="_blank" class="img-link"><img src="./images/icons/telegram.svg"
+                                        alt="telegram icon" class="telegram-img" /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phone-container contact-container">
+                        <div class="contact-content">
+                            <div class="tiny-header">Телефон</div>
+                            <div class="phone-links">
+                                <a href="tel:+995551287944">+995 55128 79 44</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="address-container contact-container">
+                        <div class="address-content contact-content">
+                            <div class="tiny-header">Адрес</div>
+                            <div class="address-links">
+                                <p>
+                                    Georgia, City Batumi, Zhiuli Shartava Avenue, N&nbsp;32, Apartment&nbsp;N87,
+                                    Floor&nbsp;6
+                                </p>
+                            </div>
+                        </div>
+                        <div class="map-content">
+                            <img src="./images/technologies/tech3.webp" alt="map" class="map-img" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="part1">
+                            <div class="form-header">
+                                Остались вопросы?
+                            </div>
+                            <p class="form-description">Напишите нам и мы ответим в ближайшее время!</p>
+                            <input type="text" name="user-name" class="user-name" placeholder="Ваше имя" />
+                            <input id="phone" type="tel" name="user-phone" class="user-phone phone-input"
+                                placeholder="___ ___ __ __" />
+                            <textarea class="user-question" placeholder="Ваш вопрос"></textarea>
+                        </div>
+                        <div class="part2">
+                            <input type="submit" class="submit-button" value="Задать вопрос" />
+                            <p class="privacy-policy">Заполняя эту форму, Вы соглашаетесь с правилами <a href="#"
+                                    target="_blank">Политики Конфиденциальности</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div>
+        </section>
+
+
+    </main>
+    @@include('html/libs/footer.html')
+</body>
+
+</html>
